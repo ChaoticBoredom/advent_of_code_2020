@@ -1,5 +1,3 @@
-require "pry"
-
 inputs = File.readlines("input.txt").map(&:strip)
 
 def traverse(inputs, diagx, diagy)
