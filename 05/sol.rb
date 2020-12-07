@@ -1,5 +1,3 @@
-require "pry"
-
 inputs = File.readlines("input.txt").map(&:chomp).map(&:chars)
 
 def find_next(min, max, input)
@@ -28,9 +26,7 @@ end
 
 def find_missing_seat(seats)
   seat = seats.min
-  while seats.include?(seat)
-    seat += 1
-  end
+  seat += 1 while seats.include?(seat)
   seat
 end
 

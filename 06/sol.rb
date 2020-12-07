@@ -1,5 +1,3 @@
-require "pry"
-
 inputs = File.read("input.txt").split("\n\n")
 
 part1 = 0
