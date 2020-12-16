@@ -25,7 +25,6 @@ def cycle(inputs, idx)
       h[curr_val] = [count]
     end
     count += 1
-    print "." if (count % 1_000_000).zero?
   end
 
   curr_val
